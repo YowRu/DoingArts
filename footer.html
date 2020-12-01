@@ -1,0 +1,27 @@
+<body>
+    <img src="img/logo.png" class="logo_m" alt="">
+    <div class="wp">
+        <div class="copyright">隱私權聲明 Copyright ©多音藝術 All Rights Reserved</div>
+        <div class="flex">
+            <p>235 新北市中和區中山路3段179巷15號</p>
+            <p>+886 2 2812 5509</p>
+            <p>Doingarts.co@gmail.com</p>
+        </div>
+        <div class="fb">Facebook</div>
+    </div>
+    <p id="backtop"></p>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('#backtop').fadeIn(800);
+            } else {
+                $('#backtop').stop().fadeOut(500);
+            }
+        });
+        $('#backtop').click(function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    </script>
+</body>
