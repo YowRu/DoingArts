@@ -96,7 +96,7 @@ header nav span {
     background: #43365D;
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
-    box-shadow: 0px 2px 2px #fff;
+    box-shadow: 0px 2px 0 #fff;
 }
 
 header nav span:nth-of-type(1) {
@@ -272,7 +272,7 @@ header .row1 .menu a.fb {
 }
 
 #main .aboutWp {
-    background: url('../img/banner_PC.svg') no-repeat right center;
+    background: url('../img/banner_PC.png') no-repeat right center;
     background-size: contain;
 }
 
@@ -854,7 +854,7 @@ footer #backtop {
         display: block;
         width: 100%;
         height: 300px;
-        background: url('../img/aboutBg_m.svg') no-repeat right center;
+        background: url('../img/banner_m.png') no-repeat right center;
         background-size: contain;
     }
 
