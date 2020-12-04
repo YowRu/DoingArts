@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: '微軟正黑體';
 }
 
 body ul,
@@ -39,7 +40,7 @@ body {
     padding: 0;
     width: 100%;
     min-width: 270px;
-    font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;
+    font-family: '微軟正黑體';
     position: relative;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e0e0e3+0,f2ebf0+35,fbeff2+70,fff8f5+100 */
     background: #e0e0e3;
@@ -242,7 +243,7 @@ header .row1 .menu {
     padding-top: 41px;
     position: absolute;
     top: 53px;
-    left: 31%;
+    left: 0;
     z-index: 3;
     display: none;
 }
@@ -254,14 +255,32 @@ header .row1 .menu a {
     color: #fff;
     line-height: 60px;
     text-align: left;
+    width: 90%;
+    padding-left: 39%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header .row1 .menu a.border {
+    border-radius: 6px;
+    width: 90%;
+    padding-left: 39%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 48px;
+    line-height: 48px;
+    background-color: #fff;
+    color: #43365D;
+    font-weight: 400;
 }
 
 header .row1 .menu a.fb {
     display: block;
     width: 40px;
     height: 40px;
-    background: url('../img/fb_m.svg') no-repeat center;
+    background: url('../img/fb_m.svg') no-repeat 39% center;
     background-size: contain;
+    margin-top: 10px;
 }
 
 #main {
@@ -359,14 +378,21 @@ header .row1 .menu a.fb {
     color: #43365D
 }
 
-#main #case {
+#main #case,
+#main #caseM {
     width: 100%;
     background: url('../img/caseBg.svg') no-repeat center;
     background-size: contain;
 }
 
+#main #caseM {
+    display: none;
+}
+
 #main #case .row1,
-#main #case .row2Wp .row2 {
+#main #case .row2Wp .row2,
+#main #caseM .row1,
+#main #caseM .row2Wp .row2 {
     max-width: 1366px;
     width: 100%;
     margin: -33px auto 0;
@@ -377,12 +403,14 @@ header .row1 .menu a.fb {
     align-items: flex-start;
 }
 
-#main #case .row2Wp .row2Wp {
+#main #case .row2Wp .row2Wp,
+#main #caseM .row2Wp .row2Wp {
     padding-top: 0;
     position: relative;
 }
 
-#main #case .row2Wp .row2Wp:after {
+#main #case .row2Wp .row2Wp:after,
+#main #caseM .row2Wp .row2Wp:after {
     content: '';
     width: 368px;
     height: 445px;
@@ -394,7 +422,9 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .left,
-#main #case .row2Wp .row2 .left {
+#main #case .row2Wp .row2 .left,
+#main #caseM .row1 .left,
+#main #caseM .row2Wp .row2 .left {
     width: 35%;
     border-top: 6px solid #43365D;
     box-sizing: border-box;
@@ -402,7 +432,9 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .left .text,
-#main #case .row2Wp .row2 .left .text {
+#main #case .row2Wp .row2 .left .text,
+#main #caseM .row1 .left .text,
+#main #caseM .row2Wp .row2 .left .text {
     margin: 12px auto 25px;
     color: #727171;
     font-size: 1.25rem;
@@ -410,7 +442,9 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .left .text .bold,
-#main #case .row2Wp .row2 .left .text .bold {
+#main #case .row2Wp .row2 .left .text .bold,
+#main #caseM .row1 .left .text .bold,
+#main #caseM .row2Wp .row2 .left .text .bold {
     font-size: 1.56rem;
     font-weight: 400;
 }
@@ -441,14 +475,18 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .left table,
-#main #case .row2Wp .row2 .left table {
+#main #case .row2Wp .row2 .left table,
+#main #caseM .row1 .left table,
+#main #caseM .row2Wp .row2 .left table {
     width: 100%;
     overflow: scroll;
     border-collapse: collapse;
 }
 
 #main #case .row1 .left table td,
-#main #case .row2Wp .row2 .left table td {
+#main #case .row2Wp .row2 .left table td,
+#main #caseM .row1 .left table td,
+#main #caseM .row2Wp .row2 .left table td {
     height: 75px;
     width: 50%;
     padding: 0 7px 0 15px;
@@ -459,20 +497,25 @@ header .row1 .menu a.fb {
     font-weight: 300;
 }
 
-#main #case .row2Wp .row2 .left table td:nth-child(1) {
+#main #case .row2Wp .row2 .left table td:nth-child(1),
+#main #caseM .row2Wp .row2 .left table td:nth-child(1) {
     width: 37px;
     background-color: #EDEDED;
     text-decoration: underline;
 }
 
 #main #case .row2Wp .row2 .left table td:nth-child(2),
-#main #case .row2Wp .row2 .left table td:nth-child(3) {
+#main #case .row2Wp .row2 .left table td:nth-child(3),
+#main #caseM .row2Wp .row2 .left table td:nth-child(2),
+#main #caseM .row2Wp .row2 .left table td:nth-child(3) {
     width: 49%;
 }
 
 
 #main #case .row1 .left table .purple,
-#main #case .row2Wp .row2 .left table .purple {
+#main #case .row2Wp .row2 .left table .purple,
+#main #caseM .row1 .left table .purple,
+#main #caseM .row2Wp .row2 .left table .purple {
     background-color: #43365D;
     color: #fff;
     padding: 0 0 0 20px;
@@ -481,7 +524,9 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .right,
-#main #case .row2Wp .row2 .right {
+#main #case .row2Wp .row2 .right,
+#main #caseM .row1 .right,
+#main #caseM .row2Wp .row2 .right {
     width: 65%;
     display: flex;
     justify-content: center;
@@ -490,13 +535,17 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .right div,
-#main #case .row2Wp .row2 .right div {
+#main #case .row2Wp .row2 .right div,
+#main #caseM .row1 .right div,
+#main #caseM .row2Wp .row2 .right div {
     margin: 0 5px 48px;
     width: 30%;
 }
 
 #main #case .row1 .right div p,
-#main #case .row2Wp .row2 .right div p {
+#main #case .row2Wp .row2 .right div p,
+#main #caseM .row1 .right div p,
+#main #caseM .row2Wp .row2 .right div p {
     color: #43365D;
     font-weight: 300;
     width: 75%;
@@ -505,19 +554,23 @@ header .row1 .menu a.fb {
 }
 
 #main #case .row1 .right div:last-child,
-#main #case .row2Wp .row2 .right div:last-child {
+#main #case .row2Wp .row2 .right div:last-child,
+#main #caseM .row1 .right div:last-child,
+#main #caseM .row2Wp .row2 .right div:last-child {
     opacity: 0;
 }
 
 #main #case .row1 img,
-#main #case .row2Wp .row2 img {
+#main #case .row2Wp .row2 img,
+#main #caseM .row1 img,
+#main #caseM .row2Wp .row2 img {
     height: 166px;
     object-fit: contain;
     margin: 0 auto;
     display: block;
 }
 
-
+#main #caseM .row2Wp .mobile,
 #main #case .row2Wp .mobile {
     display: none;
 }
@@ -607,7 +660,7 @@ header .row1 .menu a.fb {
 }
 
 #main #contact form textarea {
-    width: 790px;
+    width: 100%;
     height: 110px;
     resize: none;
 }
@@ -636,7 +689,7 @@ header .row1 .menu a.fb {
     font-weight: 500;
     text-align: center;
     line-height: 45px;
-    color: #252422;
+    color: #43365D;
 }
 
 img.mobileIMG {
@@ -759,7 +812,9 @@ footer #backtop {
     }
 
     #main #case .row1 img,
-    #main #case .row2Wp .row2 img {
+    #main #case .row2Wp .row2 img,
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img {
         height: 150px;
     }
 
@@ -781,18 +836,24 @@ footer #backtop {
     }
 
     #main #case .row1 .right,
-    #main #case .row2Wp .row2 .right {
+    #main #case .row2Wp .row2 .right,
+    #main #caseM .row1 .right,
+    #main #caseM .row2Wp .row2 .righ {
         width: 75%;
     }
 
     #main #case .row1 .left,
-    #main #case .row2Wp .row2 .left {
+    #main #case .row2Wp .row2 .left,
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left {
         width: 25%;
         margin-right: 0;
     }
 
     #main #case .row1 .left table .purple,
-    #main #case .row2Wp .row2 .left table .purple {
+    #main #case .row2Wp .row2 .left table .purple,
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple {
         padding: 0 0 0 10px;
     }
 }
@@ -817,10 +878,6 @@ footer #backtop {
 
     #main #contact form .flex {
         justify-content: center;
-    }
-
-    #main #contact form textarea {
-        width: 382px;
     }
 }
 
@@ -859,37 +916,42 @@ footer #backtop {
     }
 
     #main #case {
+        display: none;
+    }
+
+    #main #caseM {
+        display: block;
         margin-top: 100px;
         background-color: #43365D;
         padding: 28px 0 0;
         box-sizing: border-box;
     }
 
-    #main #case p.title {
+    #main #caseM p.title {
         color: #fff;
         margin-bottom: 28px;
     }
 
-    #main #case .row1 .left,
-    #main #case .row2Wp .row2 .left,
-    #main #case .row1 .right,
-    #main #case .row2Wp .row2 .right {
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right,
+    #main #caseM .row2Wp .row2 .right {
         width: 100%;
     }
 
-    #main #case .row1 .right div p,
-    #main #case .row2Wp .row2 .right div p {
+    #main #caseM .row1 .right div p,
+    #main #caseM .row2Wp .row2 .right div p {
         display: none;
     }
 
-    #main #case .row1 .left .text,
-    #main #case .row2Wp .row2 .left .text {
+    #main #caseM .row1 .left .text,
+    #main #caseM .row2Wp .row2 .left .text {
         text-align: center;
         color: #fff;
     }
 
-    #main #case .row1 .left table tr,
-    #main #case .row2Wp .row2 .left table tr {
+    #main #caseM .row1 .left table tr,
+    #main #caseM .row2Wp .row2 .left table tr {
         display: flex;
         flex-direction: column;
         height: 70px;
@@ -899,14 +961,14 @@ footer #backtop {
         border-bottom: 1px solid #fff;
     }
 
-    #main #case .row2Wp .row2 .left table tr {
+    #main #caseM .row2Wp .row2 .left table tr {
         padding: 20px 0 5px;
     }
 
-    #main #case .row1 .left table .purple,
-    #main #case .row2Wp .row2 .left table .purple,
-    #main #case .row1 .left table td,
-    #main #case .row2Wp .row2 .left table td {
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple,
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td {
         background-color: transparent;
         color: #fff;
         width: 100%;
@@ -918,18 +980,18 @@ footer #backtop {
         font-weight: 300;
     }
 
-    #main #case .row1 .left,
-    #main #case .row2Wp .row2 .left {
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left {
         margin-right: 0;
     }
 
-    #main #case .row1 .left table td,
-    #main #case .row2Wp .row2 .left table td {
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td {
         font-weight: 100;
     }
 
-    #main #case .row1 img,
-    #main #case .row2Wp .row2 img {
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img {
         height: 400px;
     }
 
@@ -943,7 +1005,7 @@ footer #backtop {
         bottom: 35px;
     }
 
-    #main #case .row2Wp .row2 .slick-dots {
+    #main #caseM .row2Wp .row2 .slick-dots {
         bottom: 5px;
     }
 
@@ -958,11 +1020,11 @@ footer #backtop {
         line-height: 12px;
     }
 
-    #main #case .row2Wp .row2 .slick-dots li button:before {
+    #main #caseM .row2Wp .row2 .slick-dots li button:before {
         border: 1px solid #5D5D5D;
     }
 
-    #main #case .row2Wp .row2 .slick-dots li button:before {
+    #main #caseM .row2Wp .row2 .slick-dots li button:before {
         opacity: 1;
     }
 
@@ -976,24 +1038,24 @@ footer #backtop {
         line-height: 12px;
     }
 
-    #main #case .row2Wp .row2 .left {
+    #main #caseM .row2Wp .row2 .left {
         border-top: 0;
     }
 
-    #main #case .row2Wp .row2 .left .text .bold {
+    #main #caseM .row2Wp .row2 .left .text .bold {
         color: #43365D;
     }
 
-    #main #case .row2Wp .row2 .left .text p {
+    #main #caseM .row2Wp .row2 .left .text p {
         color: #727171;
     }
 
-    #main #case .row2Wp .mobile {
+    #main #caseM .row2Wp .mobile {
         display: block;
         border-color: #43365D;
     }
 
-    #main #case .row2Wp .tableWp.pc {
+    #main #caseM .row2Wp .tableWp.pc {
         display: none;
     }
 
@@ -1007,68 +1069,68 @@ footer #backtop {
         border-left: 1px solid #43365D;
     }
 
-    #main #case .row2Wp .row2 .left table .purple,
-    #main #case .row2Wp .row2 .left table td {
+    #main #caseM .row2Wp .row2 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table td {
         color: #727171;
     }
 
-    #main #case .row2Wp .row2 .left table tr {
+    #main #caseM .row2Wp .row2 .left table tr {
         border-bottom: 0;
         padding-bottom: 10px;
     }
 
-    #main #case .row2Wp .row2 .left table tr:nth-child(odd) {
+    #main #caseM .row2Wp .row2 .left table tr:nth-child(odd) {
         background-color: #E0E0E3;
         margin-top: 20px;
     }
 
-    #main #case .row2Wp .row2 .left table tr:nth-child(even) td:nth-child(2) {
+    #main #caseM .row2Wp .row2 .left table tr:nth-child(even) td:nth-child(2) {
         border-bottom: 2px solid #858585;
         width: 90%;
         margin: 0 auto;
     }
 
-    #main #case .row2Wp .row2 .left table tr td {
+    #main #caseM .row2Wp .row2 .left table tr td {
         text-align: center;
     }
 
-    #main #case .row2Wp .row2 .left table td.year {
+    #main #caseM .row2Wp .row2 .left table td.year {
         width: 100%;
     }
 
-    #main #case .row2Wp .row2 .left table td:nth-child(1) {
+    #main #caseM .row2Wp .row2 .left table td:nth-child(1) {
         width: auto;
         text-decoration: none;
         background-color: transparent;
     }
 
-    #main #case .row2Wp .row2 .left table td:nth-child(1) {
+    #main #caseM .row2Wp .row2 .left table td:nth-child(1) {
         width: 50%;
     }
 
-    #main #case .row2Wp .row2 .left table td.year,
-    #main #case .row2Wp .row2 .left table td:nth-child(2) {
+    #main #caseM .row2Wp .row2 .left table td.year,
+    #main #caseM .row2Wp .row2 .left table td:nth-child(2) {
         width: 90%;
         margin: 0 auto;
     }
 
-    #main #case .row2Wp .row2 .slick-dots li.slick-active button:before {
+    #main #caseM .row2Wp .row2 .slick-dots li.slick-active button:before {
         border: 1px solid #5D5D5D;
     }
 
-    #main #case .row2Wp .row2 {
+    #main #caseM .row2Wp .row2 {
         background-color: #FBEFF2;
         margin-top: 20px;
     }
 
-    #main #case .row1 .right div,
-    #main #case .row2Wp .row2 .right div {
+    #main #caseM .row1 .right div,
+    #main #caseM .row2Wp .row2 .right div {
         width: 80%;
         margin-bottom: 0;
     }
 
-    #main #case .row1,
-    #main #case .row2Wp .row2 {
+    #main #caseM .row1,
+    #main #caseM .row2Wp .row2 {
         padding: 20px;
         flex-direction: column-reverse;
     }
@@ -1097,22 +1159,13 @@ footer #backtop {
 @media(max-width:1000px) {
     header {
         padding: 0;
+        background-color: transparent;
     }
 
     header nav {
         z-index: 3;
         display: block;
     }
-
-    /* header nav.radius {
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
 
     header .row1 .right,
     header .row1 .top {
@@ -1176,13 +1229,13 @@ footer #backtop {
         margin-bottom: 23px;
     }
 
-    #main #case .row1 .left,
-    #main #case .row2Wp .row2 .left {
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left {
         margin-right: 10px;
     }
 
-    #main #case .row1,
-    #main #case .row2Wp .row2 {
+    #main #caseM .row1,
+    #main #caseM .row2Wp .row2 {
         padding: 68px 20px;
     }
 
@@ -1253,8 +1306,8 @@ footer #backtop {
         width: 45%;
     }
 
-    #main #case .row1 img,
-    #main #case .row2Wp .row2 img {
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img {
         width: 100%;
     }
 
@@ -1289,15 +1342,15 @@ footer #backtop {
         font-size: 1.5rem;
     }
 
-    #main #case .row1 {
+    #main #caseM .row1 {
         padding: 40px 20px;
     }
 }
 
 @media(max-width:700px) {
 
-    #main #case .row1 img,
-    #main #case .row2Wp .row2 img {
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img {
         height: 300px;
     }
 
@@ -1369,7 +1422,7 @@ footer #backtop {
         padding: 43px 0 56px;
     }
 
-    #main #case .row2Wp .row2 .slick-dots {
+    #main #caseM .row2Wp .row2 .slick-dots {
         bottom: -29px;
     }
 }
@@ -1388,8 +1441,8 @@ footer #backtop {
         width: 90%;
     }
 
-    #main #case .row1 img,
-    #main #case .row2Wp .row2 img {
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img {
         height: 250px;
     }
 
@@ -1451,12 +1504,12 @@ footer #backtop {
     #main #about .text .title,
     #main p.title,
     #main #contact p:nth-child(1),
-    #main #case .row1 .left .text .bold,
-    #main #case .row2Wp .row2 .left .text .bold {
+    #main #caseM .row1 .left .text .bold,
+    #main #caseM .row2Wp .row2 .left .text .bold {
         font-size: 1.3rem;
     }
 
-    #main #case p.title {
+    #main #caseM p.title {
         margin-bottom: 0;
     }
 
@@ -1468,10 +1521,10 @@ footer #backtop {
     #main #contact form label,
     #main #about .text p span,
     #main #service .row1 .flex div p,
-    #main #case .row1 .left .text p,
-    #main #case .row1 .left table td,
-    #main #case .row2Wp .row2 .left table td,
-    #main #case .row2Wp .row2 .left .text p {
+    #main #caseM .row1 .left .text p,
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td,
+    #main #caseM .row2Wp .row2 .left .text p {
         font-size: 1.1rem;
     }
 
@@ -1489,7 +1542,7 @@ footer #backtop {
         margin-bottom: 0;
     }
 
-    #main #case {
+    #main #caseM {
         margin-top: 0;
     }
 
@@ -1507,7 +1560,18 @@ footer #backtop {
 }
 
 @media(max-width:450px) {
-    #main #case .row2Wp .row2 .left .text {
+
+    header .row1 .menu a.border,
+    header .row1 .menu a {
+        padding-left: 34%;
+    }
+
+    header .row1 .menu a.fb {
+        background: url(../img/fb_m.svg) no-repeat 24% center;
+        background-size: contain;
+    }
+
+    #main #caseM .row2Wp .row2 .left .text {
         margin-top: 30px;
     }
 
@@ -1519,8 +1583,8 @@ footer #backtop {
     #main #about .text .title,
     #main p.title,
     #main #contact p:nth-child(1),
-    #main #case .row1 .left .text .bold,
-    #main #case .row2Wp .row2 .left .text .bold {
+    #main #caseM .row1 .left .text .bold,
+    #main #caseM .row2Wp .row2 .left .text .bold {
         font-size: 1.2rem;
     }
 
@@ -1528,10 +1592,10 @@ footer #backtop {
     #main #contact p:nth-child(2),
     #main #contact form label,
     #main #service .row1 .flex div p,
-    #main #case .row1 .left .text p,
-    #main #case .row1 .left table td,
-    #main #case .row2Wp .row2 .left table td,
-    #main #case .row2Wp .row2 .left .text p {
+    #main #caseM .row1 .left .text p,
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td,
+    #main #caseM .row2Wp .row2 .left .text p {
         font-size: 1rem;
     }
 
@@ -1543,8 +1607,8 @@ footer #backtop {
         margin-bottom: 10px;
     }
 
-    #main #case .row1,
-    #main #case .row2Wp .row2 {
+    #main #caseM .row1,
+    #main #caseM .row2Wp .row2 {
         padding: 40px 0;
     }
 
@@ -1556,12 +1620,12 @@ footer #backtop {
         margin: 35px auto;
     }
 
-    #main #case .row1 .right div {
+    #main #caseM .row1 .right div {
         width: 95%;
         margin-left: 3px;
     }
 
-    #main #case .row2Wp .row2 .right div {
+    #main #caseM .row2Wp .row2 .right div {
         width: 100%;
         margin-left: 3px;
     }
@@ -1569,12 +1633,12 @@ footer #backtop {
 
 @media(max-width:414px) {
 
-    #main #case .row1 .right div {
+    #main #caseM .row1 .right div {
         width: 90%;
         margin-left: 2px;
     }
 
-    #main #case .row1 {
+    #main #caseM .row1 {
         padding: 20px 0;
     }
 
@@ -1590,8 +1654,8 @@ footer #backtop {
     #main #about .text .title,
     #main p.title,
     #main #contact p:nth-child(1),
-    #main #case .row1 .left .text .bold,
-    #main #case .row2Wp .row2 .left .text .bold {
+    #main #caseM .row1 .left .text .bold,
+    #main #caseM .row2Wp .row2 .left .text .bold {
         font-size: 1rem;
     }
 
@@ -1599,10 +1663,10 @@ footer #backtop {
     #main #contact p:nth-child(2),
     #main #contact form label,
     #main #service .row1 .flex div p,
-    #main #case .row1 .left .text p,
-    #main #case .row1 .left table td,
-    #main #case .row2Wp .row2 .left table td,
-    #main #case .row2Wp .row2 .left .text p {
+    #main #caseM .row1 .left .text p,
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td,
+    #main #caseM .row2Wp .row2 .left .text p {
         font-size: 0.9rem;
     }
 
@@ -1662,7 +1726,7 @@ footer #backtop {
 }
 
 @media(max-width:350px) {
-    #main #case .row2Wp .row2 .slick-dots {
+    #main #caseM .row2Wp .row2 .slick-dots {
         bottom: -17px;
     }
 
