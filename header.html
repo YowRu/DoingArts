@@ -19,7 +19,7 @@
         <div class="menu">
             <a href="#about" class="border">關於多音</a>
             <a href="#service">服務項目</a>
-            <a href="#case">多音實績</a>
+            <a href="#caseM">多音實績</a>
             <a href="#contact">聯絡我們</a>
             <a href="https://www.facebook.com/doingarts/" class="fb" target="_blank"></a>
         </div>
@@ -162,6 +162,17 @@
             if ($W > 1000) {
                 $('html,body').animate({
                     scrollTop: $('#case').offset().top - 198
+                }, 800);
+            } else {
+                $('html,body').animate({
+                    scrollTop: $('#case').offset().top - 83
+                }, 800);
+            }
+        });
+        $('a[href=#caseM]').click(function () {
+            if ($W > 1000) {
+                $('html,body').animate({
+                    scrollTop: $('#caseM').offset().top - 198
                 }, 800);
             } else {
                 $('html,body').animate({
