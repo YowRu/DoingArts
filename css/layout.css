@@ -392,15 +392,39 @@ header .row1 .menu a.fb {
 #main #case .row1,
 #main #case .row2Wp .row2,
 #main #caseM .row1,
-#main #caseM .row2Wp .row2 {
-    max-width: 1366px;
+#main #caseM .row2Wp .row2,
+#main #case .row3 .flex,
+#main #caseM .row3 .wp {
+    max-width: 1255px;
     width: 100%;
     margin: -33px auto 0;
-    padding: 68px 40px;
+    padding: 68px 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+#main #case .row3 .flex {
+    flex-wrap: wrap;
+}
+
+#main #case .row3 .flex div {
+    width: 24%;
+    margin: 0 auto;
+}
+
+#main #case .row2Wp,
+#main #case .row3 {
+    border-top: 6px solid #43365D;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#main #case .row3 {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 10px 123px 0;
 }
 
 #main #case .row2Wp .row2Wp,
@@ -426,33 +450,46 @@ header .row1 .menu a.fb {
 #main #caseM .row1 .left,
 #main #caseM .row2Wp .row2 .left {
     width: 35%;
-    border-top: 6px solid #43365D;
     box-sizing: border-box;
-    margin-right: 25px;
 }
 
+
+
+#main #case .text,
 #main #case .row1 .left .text,
 #main #case .row2Wp .row2 .left .text,
 #main #caseM .row1 .left .text,
-#main #caseM .row2Wp .row2 .left .text {
+#main #caseM .row2Wp .row2 .left .text,
+#main #caseM .row3 .text {
     margin: 12px auto 25px;
     color: #727171;
     font-size: 1.25rem;
     font-weight: 300;
 }
 
+#main #case .text {
+    text-align: center;
+    margin: 21px auto 0;
+}
+
+#main #case .text .bold,
 #main #case .row1 .left .text .bold,
 #main #case .row2Wp .row2 .left .text .bold,
 #main #caseM .row1 .left .text .bold,
-#main #caseM .row2Wp .row2 .left .text .bold {
+#main #caseM .row2Wp .row2 .left .text .bold,
+#main #caseM .row3 .text .bold {
     font-size: 1.56rem;
     font-weight: 400;
+}
+
+#main #case .text .bold {
+    padding-bottom: 8px;
 }
 
 .tableWp,
 .mobile {
     position: relative;
-    height: 620px;
+    height: 726px;
     overflow: auto;
     border: 1px solid #fff;
 }
@@ -528,8 +565,10 @@ header .row1 .menu a.fb {
 #main #caseM .row1 .right,
 #main #caseM .row2Wp .row2 .right {
     width: 65%;
+    height: 726px;
+    overflow-y: scroll;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -538,17 +577,19 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2 .right div,
 #main #caseM .row1 .right div,
 #main #caseM .row2Wp .row2 .right div {
-    margin: 0 5px 48px;
+    margin: 0 4px 48px 4px;
     width: 30%;
 }
 
 #main #case .row1 .right div p,
 #main #case .row2Wp .row2 .right div p,
 #main #caseM .row1 .right div p,
-#main #caseM .row2Wp .row2 .right div p {
+#main #caseM .row2Wp .row2 .right div p,
+#main #case .row3 .flex div p,
+#main #caseM .row3 .wp div p {
     color: #43365D;
     font-weight: 300;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -563,9 +604,12 @@ header .row1 .menu a.fb {
 #main #case .row1 img,
 #main #case .row2Wp .row2 img,
 #main #caseM .row1 img,
-#main #caseM .row2Wp .row2 img {
+#main #caseM .row2Wp .row2 img,
+#main #case .row3 .flex div img,
+#main #caseM .row3 .wp div img {
     height: 166px;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     margin: 0 auto;
     display: block;
 }
@@ -692,6 +736,14 @@ header .row1 .menu a.fb {
     color: #43365D;
 }
 
+#main #case p.title {
+    border-bottom: 6px solid #43365D;
+    padding-bottom: 20px;
+    max-width: 1255px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 img.mobileIMG {
     display: none;
 }
@@ -814,7 +866,8 @@ footer #backtop {
     #main #case .row1 img,
     #main #case .row2Wp .row2 img,
     #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img {
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row3 .wp div img {
         height: 150px;
     }
 
@@ -840,6 +893,7 @@ footer #backtop {
     #main #caseM .row1 .right,
     #main #caseM .row2Wp .row2 .righ {
         width: 75%;
+        justify-content: center;
     }
 
     #main #case .row1 .left,
@@ -929,7 +983,7 @@ footer #backtop {
 
     #main #caseM p.title {
         color: #fff;
-        margin-bottom: 28px;
+        margin-bottom: -3px;
     }
 
     #main #caseM .row1 .left,
@@ -937,6 +991,12 @@ footer #backtop {
     #main #caseM .row1 .right,
     #main #caseM .row2Wp .row2 .right {
         width: 100%;
+        height: 600px;
+        justify-content: center;
+    }
+
+    #main #caseM .row2Wp .row2 .right {
+        height: 650px;
     }
 
     #main #caseM .row1 .right div p,
@@ -945,7 +1005,8 @@ footer #backtop {
     }
 
     #main #caseM .row1 .left .text,
-    #main #caseM .row2Wp .row2 .left .text {
+    #main #caseM .row2Wp .row2 .left .text,
+    #main #caseM .row3 .text {
         text-align: center;
         color: #fff;
     }
@@ -991,8 +1052,9 @@ footer #backtop {
     }
 
     #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img {
-        height: 400px;
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row3 .wp div img {
+        height: 600px;
     }
 
     .tableWp,
@@ -1003,6 +1065,10 @@ footer #backtop {
 
     .slick-dots {
         bottom: 35px;
+    }
+
+    #main #caseM .row3 .wp .slick-dots {
+        top: 80%
     }
 
     #main #caseM .row2Wp .row2 .slick-dots {
@@ -1125,14 +1191,46 @@ footer #backtop {
 
     #main #caseM .row1 .right div,
     #main #caseM .row2Wp .row2 .right div {
-        width: 80%;
+        width: 85%;
         margin-bottom: 0;
     }
 
-    #main #caseM .row1,
-    #main #caseM .row2Wp .row2 {
+    #main #caseM .row2Wp .row2 .right div {
+        width: 100%;
+    }
+
+    #main #caseM .row1 {
         padding: 20px;
         flex-direction: column-reverse;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-top: 0;
+        flex-direction: column-reverse;
+    }
+
+    #main #caseM .row1 {
+        padding: 68px 20px;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-top: 0;
+        padding-bottom: 227px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 139px;
+        padding-bottom: 26px;
+    }
+
+    #main #caseM .row3 .wp {
+        padding-top: 0;
+        margin-top: -8px;
+        width: 90%;
+    }
+
+    #main #caseM .row3 .wp div p {
+        display: none;
     }
 
     #main #service .row2 .flex li {
@@ -1234,11 +1332,6 @@ footer #backtop {
         margin-right: 10px;
     }
 
-    #main #caseM .row1,
-    #main #caseM .row2Wp .row2 {
-        padding: 68px 20px;
-    }
-
     footer {
         padding: 0;
         padding-top: 18px;
@@ -1307,9 +1400,14 @@ footer #backtop {
     }
 
     #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img {
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row3 .wp div img {
         width: 100%;
     }
+
+    /* #main #caseM .row3 .wp div img {
+        object-fit: fill;
+    } */
 
     footer #backtop {
         bottom: 7%;
@@ -1349,13 +1447,51 @@ footer #backtop {
 
 @media(max-width:700px) {
 
-    #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img {
-        height: 300px;
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right,
+    #main #caseM .row2Wp .row2 .right {
+        height: 350px;
     }
 
-    .slick-dots {
-        bottom: 20px;
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 477px;
+    }
+
+    #main #caseM .row2Wp .row2 .right div {
+        margin-left: 1px;
+    }
+
+    #main #caseM p.title {
+        margin-bottom: 13px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 417px;
+    }
+
+    #main #caseM .row1 img {
+        height: 330px;
+    }
+
+    .slick-dots li {
+        margin: 0 1px;
+    }
+
+    #main #caseM .row3 .wp div img {
+        height: 400px;
+    }
+
+    #main #caseM .row2Wp .row2 .right {
+        height: 550px;
+    }
+
+    #main #caseM .row2Wp .row2 img {
+        height: 500px;
     }
 
     #main #contact form {
@@ -1423,7 +1559,7 @@ footer #backtop {
     }
 
     #main #caseM .row2Wp .row2 .slick-dots {
-        bottom: -29px;
+        bottom: 12px;
     }
 }
 
@@ -1439,11 +1575,6 @@ footer #backtop {
     .tableWp,
     .mobile {
         width: 90%;
-    }
-
-    #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img {
-        height: 250px;
     }
 
     #main #contact form {
@@ -1505,7 +1636,8 @@ footer #backtop {
     #main p.title,
     #main #contact p:nth-child(1),
     #main #caseM .row1 .left .text .bold,
-    #main #caseM .row2Wp .row2 .left .text .bold {
+    #main #caseM .row2Wp .row2 .left .text .bold,
+    #main #caseM .row3 .text .bold {
         font-size: 1.3rem;
     }
 
@@ -1515,6 +1647,36 @@ footer #backtop {
 
     #main #service .row1 {
         width: 95%;
+    }
+
+    #main #caseM .row1 {
+        padding: 50px 20px;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row3 .wp div img {
+        height: 260px;
+    }
+
+    #main #caseM .row2Wp .row2 .slick-dots {
+        bottom: -8px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 467px;
+        padding-bottom: 0;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 537px;
+    }
+
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right,
+    #main #caseM .row2Wp .row2 .right {
+        height: 282px;
     }
 
     #main #contact p:nth-child(2),
@@ -1557,9 +1719,23 @@ footer #backtop {
         width: 80%;
     }
 
+    #main #caseM .row2Wp .row2 .right .slick-dots li:nth-last-child(-n+11) {
+        display: none;
+    }
+
+    #main #caseM .row3 .wp .slick-dots {
+        top: 70%;
+    }
 }
 
 @media(max-width:450px) {
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 550px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 472px;
+    }
 
     header .row1 .menu a.border,
     header .row1 .menu a {
@@ -1584,7 +1760,8 @@ footer #backtop {
     #main p.title,
     #main #contact p:nth-child(1),
     #main #caseM .row1 .left .text .bold,
-    #main #caseM .row2Wp .row2 .left .text .bold {
+    #main #caseM .row2Wp .row2 .left .text .bold,
+    #main #caseM .row3 .text .bold {
         font-size: 1.2rem;
     }
 
@@ -1607,8 +1784,7 @@ footer #backtop {
         margin-bottom: 10px;
     }
 
-    #main #caseM .row1,
-    #main #caseM .row2Wp .row2 {
+    #main #caseM .row1 {
         padding: 40px 0;
     }
 
@@ -1629,17 +1805,51 @@ footer #backtop {
         width: 100%;
         margin-left: 3px;
     }
+
+    #main #about {
+        height: 600px;
+    }
+
+    #main #caseM .row3 {
+        margin-top: 30px;
+    }
+
+    #main #contact {
+        padding-top: 30px;
+    }
+
+    #main #caseM .row3 .wp {
+        padding-bottom: 50px;
+    }
 }
 
 @media(max-width:414px) {
+
+    #main #service {
+        height: 439px;
+    }
+
+    #main #service::after {
+        height: 200px;
+    }
 
     #main #caseM .row1 .right div {
         width: 90%;
         margin-left: 2px;
     }
 
-    #main #caseM .row1 {
-        padding: 20px 0;
+    #main #caseM .row1 .left .text,
+    #main #caseM .row2Wp .row2 .left .text,
+    #main #caseM .row3 .text {
+        margin-top: 6px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 459px;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 519px;
     }
 
     #main .aboutWp {
@@ -1655,7 +1865,8 @@ footer #backtop {
     #main p.title,
     #main #contact p:nth-child(1),
     #main #caseM .row1 .left .text .bold,
-    #main #caseM .row2Wp .row2 .left .text .bold {
+    #main #caseM .row2Wp .row2 .left .text .bold,
+    #main #caseM .row3 .text .bold {
         font-size: 1rem;
     }
 
@@ -1697,10 +1908,6 @@ footer #backtop {
         width: 100%;
     }
 
-    #main #service {
-        height: 500px;
-    }
-
     #main #about .text p span:nth-child(2) {
         margin-bottom: 20px;
     }
@@ -1726,6 +1933,10 @@ footer #backtop {
 }
 
 @media(max-width:350px) {
+    #main #service .row1 .flex {
+        width: 90%;
+    }
+
     #main #caseM .row2Wp .row2 .slick-dots {
         bottom: -17px;
     }
