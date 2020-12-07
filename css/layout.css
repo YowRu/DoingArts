@@ -393,7 +393,7 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2,
 #main #caseM .row1,
 #main #caseM .row2Wp .row2,
-#main #case .row3 .flex,
+#main #case .row3 .wp,
 #main #caseM .row3 .wp {
     max-width: 1255px;
     width: 100%;
@@ -405,11 +405,11 @@ header .row1 .menu a.fb {
     align-items: flex-start;
 }
 
-#main #case .row3 .flex {
+#main #case .row3 .wp {
     flex-wrap: wrap;
 }
 
-#main #case .row3 .flex div {
+#main #case .row3 .wp div {
     width: 24%;
     margin: 0 auto;
 }
@@ -585,7 +585,7 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2 .right div p,
 #main #caseM .row1 .right div p,
 #main #caseM .row2Wp .row2 .right div p,
-#main #case .row3 .flex div p,
+#main #case .row3 .wp div p,
 #main #caseM .row3 .wp div p {
     color: #43365D;
     font-weight: 300;
@@ -605,7 +605,7 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2 img,
 #main #caseM .row1 img,
 #main #caseM .row2Wp .row2 img,
-#main #case .row3 .flex div img,
+#main #case .row3 .wp div img,
 #main #caseM .row3 .wp div img {
     height: 166px;
     width: 100%;
@@ -1932,7 +1932,17 @@ footer #backtop {
     }
 }
 
+@media(max-width:360px) {
+    #main .aboutWp::after {
+        margin-top: -210px;
+    }
+}
+
 @media(max-width:350px) {
+    #main .aboutWp::after {
+        margin-top: -220px;
+    }
+
     #main #service .row1 .flex {
         width: 90%;
     }
@@ -1963,5 +1973,15 @@ footer #backtop {
 
     footer .r ul li {
         font-size: 0.9rem;
+    }
+}
+
+@media(max-width:330px) {
+    #main #about .text {
+        width: 95%;
+    }
+
+    #main .aboutWp::after {
+        margin-top: -200px;
     }
 }
