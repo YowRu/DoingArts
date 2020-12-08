@@ -393,8 +393,7 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2,
 #main #caseM .row1,
 #main #caseM .row2Wp .row2,
-#main #case .row3 .wp,
-#main #caseM .row3 .wp {
+#main #case .row3 .wp {
     max-width: 1255px;
     width: 100%;
     margin: -33px auto 0;
@@ -403,6 +402,14 @@ header .row1 .menu a.fb {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+#main #caseM .row3 .wp {
+    max-width: 1255px;
+    width: 100%;
+    margin: -33px auto 0;
+    padding: 68px 0;
+    box-sizing: border-box;
 }
 
 #main #case .row3 .wp {
