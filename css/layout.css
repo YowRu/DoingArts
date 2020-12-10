@@ -320,6 +320,19 @@ header .row1 .menu a.fb {
     box-sizing: border-box;
 }
 
+#main #about a {
+    position: relative;
+    z-index: 1;
+}
+
+#main #about a img {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+    height: 59px;
+    opacity: 1;
+}
+
 #main #about .text .title {
     font-size: 1.6rem;
     font-weight: 500;
@@ -364,6 +377,13 @@ header .row1 .menu a.fb {
     margin-top: 163px;
 }
 
+#main #service .row1 a img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 92px auto 0;
+}
+
 #main #service .row1 .flex div {
     width: 19%;
     text-align: center;
@@ -371,11 +391,14 @@ header .row1 .menu a.fb {
 
 #main #service .row1 .flex div img {
     display: block;
-    margin: 0 auto 21px;
+    height: 103px;
+    margin: 0 auto 17px;
 }
 
 #main #service .row1 .flex div p {
-    color: #43365D
+    color: #43365D;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 #main #case,
@@ -396,8 +419,8 @@ header .row1 .menu a.fb {
 #main #case .row3 .wp {
     max-width: 1255px;
     width: 100%;
-    margin: -33px auto 0;
-    padding: 68px 0;
+    margin: 0 auto;
+    padding-bottom: 70px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -414,6 +437,7 @@ header .row1 .menu a.fb {
 
 #main #case .row3 .wp {
     flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 
 #main #case .row3 .wp div {
@@ -421,27 +445,22 @@ header .row1 .menu a.fb {
     margin: 0 auto;
 }
 
-#main #case .row2Wp,
-#main #case .row3 {
-    border-top: 6px solid #43365D;
-    padding-top: 10px;
-    box-sizing: border-box;
-}
-
 #main #case .row3 {
     max-width: 1366px;
     margin: 0 auto;
-    padding: 10px 123px 0;
+    padding: 0 123px;
+    border-top: 6px solid #43365D;
+    box-sizing: border-box;
 }
 
-#main #case .row2Wp .row2Wp,
-#main #caseM .row2Wp .row2Wp {
+#main #case .row2Wp,
+#main #caseM .row2Wp {
     padding-top: 0;
     position: relative;
 }
 
-#main #case .row2Wp .row2Wp:after,
-#main #caseM .row2Wp .row2Wp:after {
+#main #case .row2Wp:after,
+#main #caseM .row2Wp:after {
     content: '';
     width: 368px;
     height: 445px;
@@ -460,15 +479,13 @@ header .row1 .menu a.fb {
     box-sizing: border-box;
 }
 
-
-
 #main #case .text,
 #main #case .row1 .left .text,
 #main #case .row2Wp .row2 .left .text,
 #main #caseM .row1 .left .text,
 #main #caseM .row2Wp .row2 .left .text,
 #main #caseM .row3 .text {
-    margin: 12px auto 25px;
+    margin: 30px auto;
     color: #727171;
     font-size: 1.25rem;
     font-weight: 300;
@@ -476,7 +493,14 @@ header .row1 .menu a.fb {
 
 #main #case .text {
     text-align: center;
-    margin: 21px auto 0;
+}
+
+#main #case .row2Wp .text {
+    max-width: 1255px;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 6px solid #43365D;
 }
 
 #main #case .text .bold,
@@ -486,11 +510,10 @@ header .row1 .menu a.fb {
 #main #caseM .row2Wp .row2 .left .text .bold,
 #main #caseM .row3 .text .bold {
     font-size: 1.56rem;
-    font-weight: 400;
-}
-
-#main #case .text .bold {
-    padding-bottom: 8px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    height: 33px;
+    line-height: 33px;
 }
 
 .tableWp,
@@ -525,6 +548,8 @@ header .row1 .menu a.fb {
     width: 100%;
     overflow: scroll;
     border-collapse: collapse;
+    position: relative;
+    z-index: 2;
 }
 
 #main #case .row1 .left table td,
@@ -538,6 +563,7 @@ header .row1 .menu a.fb {
     background-color: #fff;
     color: #43365D;
     border-bottom: 11px solid #EDEDED;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -546,6 +572,10 @@ header .row1 .menu a.fb {
     width: 37px;
     background-color: #EDEDED;
     text-decoration: underline;
+}
+
+#main #case .row2Wp .row2 .left table td:nth-child(1) {
+    display: none;
 }
 
 #main #case .row2Wp .row2 .left table td:nth-child(2),
@@ -584,8 +614,15 @@ header .row1 .menu a.fb {
 #main #case .row2Wp .row2 .right div,
 #main #caseM .row1 .right div,
 #main #caseM .row2Wp .row2 .right div {
-    margin: 0 4px 48px 4px;
-    width: 30%;
+    margin: 0 10px 16px 0;
+    width: 250px;
+}
+
+#main #case .row1 .right div:nth-child(3n+3),
+#main #case .row2Wp .row2 .right div:nth-child(3n+3),
+#main #caseM .row1 .right div:nth-child(3n+3),
+#main #caseM .row2Wp .row2 .right div:nth-child(3n+3) {
+    margin-right: 0;
 }
 
 #main #case .row1 .right div p,
@@ -596,9 +633,11 @@ header .row1 .menu a.fb {
 #main #caseM .row3 .wp div p {
     color: #43365D;
     font-weight: 300;
-    width: 90%;
-    margin: 0 auto;
+    height: 80px;
+    margin: 5px auto 0;
     text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.8rem;
 }
 
 #main #case .row1 .right div:last-child,
@@ -615,7 +654,7 @@ header .row1 .menu a.fb {
 #main #case .row3 .wp div img,
 #main #caseM .row3 .wp div img {
     height: 166px;
-    width: 100%;
+    width: 250px;
     object-fit: cover;
     margin: 0 auto;
     display: block;
@@ -626,9 +665,25 @@ header .row1 .menu a.fb {
     display: none;
 }
 
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 1%;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 26px;
+    opacity: 0.85;
+}
+
 #main #contact {
     background-color: #191919;
-    padding: 67px 0 40px;
+    padding: 68px 0 0;
     box-sizing: border-box;
 }
 
@@ -639,17 +694,24 @@ header .row1 .menu a.fb {
     font-weight: 400;
 }
 
+#main #contact p.title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 32px;
+    line-height: 32px;
+}
+
 #main #contact p:nth-child(2) {
     font-size: 1.25rem;
-    font-weight: 200;
-    margin-bottom: 2px;
+    font-weight: 300;
+    margin-bottom: 0;
 }
 
 #main #contact form {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 35px 0 48px;
+    padding: 38px 0 48px;
     box-sizing: border-box;
 }
 
@@ -684,10 +746,10 @@ header .row1 .menu a.fb {
 #main #contact form label {
     display: block;
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin-bottom: 10px;
     color: #fff;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 #main #contact form input,
@@ -727,6 +789,7 @@ header .row1 .menu a.fb {
     line-height: 46px;
     transition: all .7s;
     margin-top: 21px;
+    font-size: 1rem;
 }
 
 #main #contact form button:hover {
@@ -739,7 +802,8 @@ header .row1 .menu a.fb {
     font-size: 1.875rem;
     font-weight: 500;
     text-align: center;
-    line-height: 45px;
+    height: 40px;
+    line-height: 40px;
     color: #43365D;
 }
 
@@ -749,6 +813,8 @@ header .row1 .menu a.fb {
     max-width: 1255px;
     width: 100%;
     margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
 }
 
 img.mobileIMG {
@@ -808,16 +874,21 @@ footer div {
     color: #43365D;
     font-size: 0.8rem;
     margin: 0 auto;
+    font-weight: 300;
 }
 
-footer div.fb::before {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 14px;
-    margin-right: 5px;
-    background: url('../img/fb.svg') no-repeat center;
+footer a.fb img {
+    width: 85px;
+    height: 18px;
+    background: url('../img/fb_pc.svg') no-repeat center;
     background-size: contain;
+    transition: all 0.6s;
+}
+
+footer a.fb,
+footer a.fb img:hover {
+    width: 100px;
+    height: 21px;
 }
 
 footer div.flex {
@@ -840,7 +911,7 @@ footer #backtop {
     position: fixed;
     right: 5%;
     bottom: 3%;
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -878,9 +949,15 @@ footer #backtop {
         height: 150px;
     }
 
+    #main #case .row3 {
+        padding: 10px 100px 0;
+    }
 }
 
 @media(max-width:1280px) {
+    #main #case .row3 {
+        padding: 10px 80px 0;
+    }
 
     #main #about img {
         height: 650px;
@@ -895,31 +972,53 @@ footer #backtop {
         box-sizing: border-box;
     }
 
-    #main #case .row1 .right,
-    #main #case .row2Wp .row2 .right,
-    #main #caseM .row1 .right,
-    #main #caseM .row2Wp .row2 .righ {
-        width: 75%;
-        justify-content: center;
-    }
-
-    #main #case .row1 .left,
-    #main #case .row2Wp .row2 .left,
-    #main #caseM .row1 .left,
-    #main #caseM .row2Wp .row2 .left {
-        width: 25%;
-        margin-right: 0;
-    }
-
     #main #case .row1 .left table .purple,
     #main #case .row2Wp .row2 .left table .purple,
     #main #caseM .row1 .left table .purple,
     #main #caseM .row2Wp .row2 .left table .purple {
         padding: 0 0 0 10px;
     }
+
+}
+
+@media(max-width:1260px) {
+
+    #main #case .row1,
+    #main #case .row2Wp .row2,
+    #main #caseM .row1,
+    #main #caseM .row2Wp .row2,
+    #main #case .row3 .wp {
+        width: 98%;
+    }
+}
+
+@media(max-width:1230px) {
+
+    #main #case .row3 {
+        padding: 10px 50px 0;
+    }
+
+    #main #case .row1 .right div,
+    #main #case .row2Wp .row2 .right div,
+    #main #caseM .row1 .right div,
+    #main #caseM .row2Wp .row2 .right div {
+        width: 31%;
+    }
+
+    #main #case .row1 img,
+    #main #case .row2Wp .row2 img,
+    #main #caseM .row1 img,
+    #main #caseM .row2Wp .row2 img,
+    #main #case .row3 .wp div img,
+    #main #caseM .row3 .wp div img {
+        width: 100%;
+    }
 }
 
 @media(max-width:1200px) {
+    #main #case .row3 {
+        padding: 10px 10px 0;
+    }
 
     #main #service .row2 {
         width: 100%;
@@ -949,6 +1048,34 @@ footer #backtop {
 }
 
 @media(max-width:1080px) {
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 44px;
+    }
+
+    .slick-next {
+        right: 2%;
+    }
+
+    #main #about .text .title {
+        font-size: 1.875rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #main #case .row1 .right,
+    #main #case .row2Wp .row2 .right,
+    #main #caseM .row1 .right,
+    #main #caseM .row2Wp .row2 .right {
+        overflow-y: unset;
+    }
+
+    #main #about a,
+    #main #service .row1 a img {
+        display: none;
+    }
+
     #main .aboutWp {
         background: url('../img/banner_m.svg') no-repeat left 3%;
         background-size: contain;
@@ -957,14 +1084,10 @@ footer #backtop {
     #main #about .text {
         left: 0;
         right: 0;
-        top: 0;
+        top: 50px;
         bottom: 0;
         border: 0;
         background-color: transparent;
-    }
-
-    #main #about .text .title {
-        text-align: center;
     }
 
     #main .aboutWp::after {
@@ -984,7 +1107,7 @@ footer #backtop {
         display: block;
         margin-top: 100px;
         background-color: #43365D;
-        padding: 28px 0 0;
+        padding: 54px 0 0;
         box-sizing: border-box;
     }
 
@@ -1002,8 +1125,20 @@ footer #backtop {
         justify-content: center;
     }
 
-    #main #caseM .row2Wp .row2 .right {
-        height: 650px;
+    #main #caseM .row2Wp .row2 img {
+        height: 600px;
+    }
+
+    #main #caseM .row1 .right,
+    #main #caseM .row3 .wp {
+        height: 417px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img {
+        height: 417px;
     }
 
     #main #caseM .row1 .right div p,
@@ -1018,19 +1153,37 @@ footer #backtop {
         color: #fff;
     }
 
+    #main #caseM .row3 .text {
+        margin-top: 35px;
+    }
+
+    #main #caseM .row3 {
+        padding-bottom: 90px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
     #main #caseM .row1 .left table tr,
     #main #caseM .row2Wp .row2 .left table tr {
         display: flex;
         flex-direction: column;
-        height: 70px;
+        height: 50px;
         width: 90%;
         margin: 0 auto;
-        padding: 25px 0 5px;
+        padding: 10px 0;
         border-bottom: 1px solid #fff;
     }
 
-    #main #caseM .row2Wp .row2 .left table tr {
-        padding: 20px 0 5px;
+    #main #caseM .row1 .left table tr {
+        padding: 16px 0 11px;
+        height: auto;
+    }
+
+    #main #caseM .row1 .left table tr:nth-child(1) {
+        padding-top: 29px;
+    }
+
+    #main #caseM .row1 .left table tr:last-child {
+        padding-bottom: 29px;
     }
 
     #main #caseM .row1 .left table .purple,
@@ -1041,11 +1194,20 @@ footer #backtop {
         color: #fff;
         width: 100%;
         padding: 0;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
         text-align: center;
         border-bottom: 0;
         height: auto;
         font-weight: 300;
+    }
+
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple {
+        font-size: 1.25rem;
+        height: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
+        box-sizing: content-box;
     }
 
     #main #caseM .row1 .left,
@@ -1056,12 +1218,6 @@ footer #backtop {
     #main #caseM .row1 .left table td,
     #main #caseM .row2Wp .row2 .left table td {
         font-weight: 100;
-    }
-
-    #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img,
-    #main #caseM .row3 .wp div img {
-        height: 600px;
     }
 
     .tableWp,
@@ -1128,6 +1284,49 @@ footer #backtop {
         border-color: #43365D;
     }
 
+    #main #caseM .row2Wp .mobile .table {
+        padding: 10px 19px;
+        position: relative;
+        z-index: 2;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr {
+        padding: 9px 22px;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr:nth-child(even) {
+        padding: 11px 22px 13px;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr:nth-child(odd) {
+        background-color: #F5F5F5;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr:nth-child(even) p:nth-child(2) {
+        line-height: 1.7rem;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr:nth-child(even) p:nth-child(2) span {
+        border-bottom: 1px solid #707070;
+        padding-bottom: 1px;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr p:nth-child(2) span:nth-child(1):after {
+        content: ' | ';
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr p {
+        color: #707070;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    #main #caseM .row2Wp .mobile .table .tr .year {
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 3px;
+    }
+
     #main #caseM .row2Wp .tableWp.pc {
         display: none;
     }
@@ -1153,8 +1352,8 @@ footer #backtop {
     }
 
     #main #caseM .row2Wp .row2 .left table tr:nth-child(odd) {
-        background-color: #E0E0E3;
-        margin-top: 20px;
+        background-color: #F5F5F5;
+        margin-top: 10px;
     }
 
     #main #caseM .row2Wp .row2 .left table tr:nth-child(even) td:nth-child(2) {
@@ -1185,6 +1384,12 @@ footer #backtop {
     #main #caseM .row2Wp .row2 .left table td:nth-child(2) {
         width: 90%;
         margin: 0 auto;
+        text-align: left;
+    }
+
+    #main #caseM .row2Wp .row2 .left table td.year {
+        font-weight: 500;
+        color: #000000;
     }
 
     #main #caseM .row2Wp .row2 .slick-dots li.slick-active button:before {
@@ -1197,9 +1402,10 @@ footer #backtop {
     }
 
     #main #caseM .row1 .right div,
-    #main #caseM .row2Wp .row2 .right div {
+    #main #caseM .row2Wp .row2 .right div,
+    #main #caseM .row3 .wp div {
         width: 85%;
-        margin-bottom: 0;
+        margin: 0 auto;
     }
 
     #main #caseM .row2Wp .row2 .right div {
@@ -1217,23 +1423,29 @@ footer #backtop {
     }
 
     #main #caseM .row1 {
-        padding: 68px 20px;
+        padding: 54px 20px;
     }
 
     #main #caseM .row2Wp .row2 {
+        width: 100%;
         padding-top: 0;
-        padding-bottom: 227px;
+        padding-bottom: 254px;
     }
 
     #main #caseM .row2Wp {
-        padding-top: 139px;
-        padding-bottom: 26px;
+        padding-top: 180px;
+        padding-bottom: 0;
     }
 
     #main #caseM .row3 .wp {
         padding-top: 0;
-        margin-top: -8px;
+        margin-top: 0;
         width: 90%;
+    }
+
+    #main #caseM .row3 .wp .slick-prev,
+    #main #caseM .row3 .wp .slick-next {
+        top: 45%;
     }
 
     #main #caseM .row3 .wp div p {
@@ -1299,8 +1511,8 @@ footer #backtop {
         background-size: contain;
     }
 
-    #main #about .text .title {
-        margin-bottom: 13px;
+    #main #about .text {
+        top: 20px;
     }
 
     #main {
@@ -1310,13 +1522,12 @@ footer #backtop {
     #main #service {
         margin: 46px auto;
         background: none;
-        padding-bottom: 115px;
     }
 
     #main #service::after {
         content: '';
         display: block;
-        margin-top: -200px;
+        margin-top: -300px;
         width: 100%;
         height: 300px;
         background: url(../img/serviceBg.svg) no-repeat right center;
@@ -1324,7 +1535,7 @@ footer #backtop {
     }
 
     #main #service .row1 .flex {
-        width: 600px;
+        width: 100%;
         margin: 46px auto 0;
         flex-wrap: wrap;
     }
@@ -1332,11 +1543,6 @@ footer #backtop {
     #main #service .row1 .flex div {
         width: 45%;
         margin-bottom: 23px;
-    }
-
-    #main #caseM .row1 .left,
-    #main #caseM .row2Wp .row2 .left {
-        margin-right: 10px;
     }
 
     footer {
@@ -1368,7 +1574,7 @@ footer #backtop {
         background-color: #43365D;
         color: #fff;
         text-align: center;
-        font-weight: 200;
+        font-weight: 300;
     }
 
     footer div.flex p {
@@ -1380,7 +1586,7 @@ footer #backtop {
     }
 
 
-    footer div.fb {
+    footer a.fb {
         display: none;
     }
 
@@ -1433,6 +1639,16 @@ footer #backtop {
 }
 
 @media(max-width:800px) {
+
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 251px;
+    }
+
+    #main .aboutWp {
+        background: url(../img/banner_m.svg) no-repeat left 21%;
+        background-size: contain;
+    }
+
     #main #contact form .flex {
         padding: 0 30px;
     }
@@ -1443,16 +1659,81 @@ footer #backtop {
     }
 
     #main p.title,
-    #main #contact p:nth-child(1) {
+    #main #contact p:nth-child(1),
+    #main #case .text .bold,
+    #main #case .row1 .left .text .bold,
+    #main #case .row2Wp .row2 .left .text .bold,
+    #main #caseM .row1 .left .text .bold,
+    #main #caseM .row2Wp .row2 .left .text .bold,
+    #main #caseM .row3 .text .bold {
         font-size: 1.5rem;
     }
 
+    #main #caseM {
+        padding: 30px 0 0;
+    }
+
     #main #caseM .row1 {
-        padding: 40px 20px;
+        padding: 30px 20px 40px
+    }
+
+    #main #service .row1 .flex div p,
+    #main #case .text,
+    #main #case .row1 .left .text,
+    #main #case .row2Wp .row2 .left .text,
+    #main #caseM .row1 .left .text,
+    #main #caseM .row2Wp .row2 .left .text,
+    #main #caseM .row3 .text {
+        font-size: 1.125rem;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img,
+    #main #caseM .row1 .right,
+    #main #caseM .row3 .wp {
+        height: 350px;
+        width: 90%;
+    }
+
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row2Wp .row2 .right {
+        height: 500px;
+    }
+
+    #main #caseM .row1 .slick-next,
+    #main #caseM .row3 .slick-next {
+        right: 4%;
+    }
+
+    #main #caseM .row1 .slick-prev,
+    #main #caseM .row1 .slick-next,
+    #main #caseM .row3 .slick-prev,
+    #main #caseM .row3 .slick-next {
+        top: 46%;
+    }
+
+    #main #caseM .row2 .slick-next {
+        right: 3%;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 191px;
     }
 }
 
 @media(max-width:700px) {
+    #main #service::after {
+        margin-top: -277px;
+    }
+
+    #main #service {
+        margin-bottom: 10px;
+    }
+
+    #main #caseM {
+        padding: 46px 0 0;
+        margin-top: 0;
+    }
 
     #main #caseM .row1 .left,
     #main #caseM .row2Wp .row2 .left,
@@ -1466,22 +1747,19 @@ footer #backtop {
     }
 
     #main #caseM .row2Wp .row2 {
-        padding-bottom: 477px;
+        padding-bottom: 501px;
     }
 
     #main #caseM .row2Wp .row2 .right div {
         margin-left: 1px;
     }
 
-    #main #caseM p.title {
-        margin-bottom: 13px;
-    }
-
     #main #caseM .row2Wp {
-        padding-top: 417px;
+        padding-top: 411px;
     }
 
-    #main #caseM .row1 img {
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img {
         height: 330px;
     }
 
@@ -1489,16 +1767,13 @@ footer #backtop {
         margin: 0 1px;
     }
 
-    #main #caseM .row3 .wp div img {
-        height: 400px;
-    }
-
     #main #caseM .row2Wp .row2 .right {
         height: 550px;
     }
 
-    #main #caseM .row2Wp .row2 img {
-        height: 500px;
+    #main #caseM .row2Wp .row2 img,
+    #main #caseM .row2Wp .row2 .right {
+        height: 480px;
     }
 
     #main #contact form {
@@ -1524,6 +1799,8 @@ footer #backtop {
     #main .aboutWp::after {
         margin-top: -250px;
         height: 250px;
+        width: 70%;
+        margin-left: 30%;
     }
 
     #main #about {
@@ -1541,7 +1818,6 @@ footer #backtop {
     }
 
     #main #service .row1 .flex {
-        width: 80%;
         flex-direction: row;
     }
 
@@ -1549,8 +1825,8 @@ footer #backtop {
         height: 80px;
     }
 
-    #main #service {
-        padding-bottom: 27px;
+    #main #caseM .row1 .left .text {
+        margin-top: 0;
     }
 
     #main #contact p {
@@ -1565,12 +1841,57 @@ footer #backtop {
         padding: 43px 0 56px;
     }
 
+    #main #caseM .row3 {
+        padding-bottom: 43px;
+    }
+
+    #main #caseM .row3 .text {
+        margin: 35px auto 20px;
+    }
+
     #main #caseM .row2Wp .row2 .slick-dots {
         bottom: 12px;
     }
 }
 
 @media(max-width:600px) {
+    #main #caseM .row2Wp {
+        padding-top: 431px;
+    }
+
+    #main #caseM .row1 {
+        padding: 20px 20px 40px;
+    }
+
+    #main #caseM .row1 .left .text {
+        margin-top: 20px;
+    }
+
+    #main #caseM p.title {
+        margin-bottom: 0;
+    }
+
+    #main #caseM {
+        padding: 30px 0 0;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img,
+    #main #caseM .row1 .right,
+    #main #caseM .row3 .wp {
+        height: 300px;
+        width: 95%;
+    }
+
+    #main #caseM .row2Wp .row2 .right,
+    #main #caseM .row2Wp .row2 img {
+        height: 450px;
+    }
+
+    #main #service .row1 {
+        width: 90%;
+    }
+
     header .row1 .right a {
         font-size: 0.8rem;
     }
@@ -1590,6 +1911,24 @@ footer #backtop {
 }
 
 @media(max-width:550px) {
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img,
+    #main #caseM .row1 .right,
+    #main #caseM .row3 .wp {
+        height: 260px;
+    }
+
+    #main #caseM .row2Wp .row2 .right,
+    #main #caseM .row2Wp .row2 img {
+        height: 410px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 36px;
+    }
+
     #main #contact form .row1 {
         flex-direction: column;
     }
@@ -1625,6 +1964,10 @@ footer #backtop {
 }
 
 @media(max-width:500px) {
+    #main #service::after {
+        margin-top: -236px;
+    }
+
     header .row1 .down {
         justify-content: flex-start;
         padding-left: 30px;
@@ -1636,7 +1979,15 @@ footer #backtop {
     }
 
     #main #about .text {
-        width: 90%;
+        width: 95%;
+        top: 0;
+    }
+
+    #main .aboutWp::after {
+        height: 220px;
+        width: 84%;
+        margin-left: 16%;
+        margin-top: -287px;
     }
 
     #main #about .text .title,
@@ -1648,22 +1999,30 @@ footer #backtop {
         font-size: 1.3rem;
     }
 
+    #main #caseM .row1 .left .text {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #main #service .row1 .flex {
+        margin-top: 34px;
+    }
+
     #main #caseM p.title {
         margin-bottom: 0;
     }
 
     #main #service .row1 {
-        width: 95%;
-    }
-
-    #main #caseM .row1 {
-        padding: 50px 20px;
+        width: 100%;
     }
 
     #main #caseM .row1 img,
-    #main #caseM .row2Wp .row2 img,
     #main #caseM .row3 .wp div img {
-        height: 260px;
+        height: 250px;
+    }
+
+    #main #caseM .row2Wp .row2 img {
+        height: 300px;
     }
 
     #main #caseM .row2Wp .row2 .slick-dots {
@@ -1671,19 +2030,27 @@ footer #backtop {
     }
 
     #main #caseM .row2Wp {
-        padding-top: 467px;
+        padding-top: 475px;
         padding-bottom: 0;
     }
 
     #main #caseM .row2Wp .row2 {
-        padding-bottom: 537px;
+        padding-bottom: 574px;
     }
 
     #main #caseM .row1 .left,
     #main #caseM .row2Wp .row2 .left,
-    #main #caseM .row1 .right,
+    #main #caseM .row1 .right {
+        height: 273px;
+    }
+
     #main #caseM .row2Wp .row2 .right {
-        height: 282px;
+        height: 296px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 30px;
     }
 
     #main #contact p:nth-child(2),
@@ -1694,7 +2061,7 @@ footer #backtop {
     #main #caseM .row1 .left table td,
     #main #caseM .row2Wp .row2 .left table td,
     #main #caseM .row2Wp .row2 .left .text p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     #main #service .row2 .flex li .text {
@@ -1707,8 +2074,8 @@ footer #backtop {
     }
 
     #main #service {
-        padding-bottom: 0;
         margin-bottom: 0;
+        height: 490px;
     }
 
     #main #caseM {
@@ -1733,15 +2100,38 @@ footer #backtop {
     #main #caseM .row3 .wp .slick-dots {
         top: 70%;
     }
+
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple {
+        font-size: 1.125rem;
+    }
 }
 
 @media(max-width:450px) {
-    #main #caseM .row2Wp .row2 {
-        padding-bottom: 550px;
+
+    #main #caseM .row3 .wp .slick-prev,
+    #main #caseM .row3 .wp .slick-next {
+        top: 42%;
+    }
+
+    #main #caseM .row3 .wp div img {
+        height: 230px;
+    }
+
+    #main #service::after {
+        margin-top: -220px;
+    }
+
+    #main #about .text {
+        width: 100%;
+    }
+
+    #main .aboutWp::after {
+        margin-top: -240px;
     }
 
     #main #caseM .row2Wp {
-        padding-top: 472px;
+        padding-top: 494px;
     }
 
     header .row1 .menu a.border,
@@ -1770,6 +2160,7 @@ footer #backtop {
     #main #caseM .row2Wp .row2 .left .text .bold,
     #main #caseM .row3 .text .bold {
         font-size: 1.2rem;
+        font-weight: bold;
     }
 
     #main #about .text p span,
@@ -1779,8 +2170,9 @@ footer #backtop {
     #main #caseM .row1 .left .text p,
     #main #caseM .row1 .left table td,
     #main #caseM .row2Wp .row2 .left table td,
-    #main #caseM .row2Wp .row2 .left .text p {
-        font-size: 1rem;
+    #main #caseM .row2Wp .row2 .left .text p,
+    #main #caseM .row2Wp .mobile .table .tr p {
+        font-size: 0.95rem;
     }
 
     .slick-dots {
@@ -1792,7 +2184,7 @@ footer #backtop {
     }
 
     #main #caseM .row1 {
-        padding: 40px 0;
+        padding: 20px 0;
     }
 
     #main #service {
@@ -1800,17 +2192,12 @@ footer #backtop {
     }
 
     #main #service .row1 .flex {
-        margin: 35px auto;
-    }
-
-    #main #caseM .row1 .right div {
-        width: 95%;
-        margin-left: 3px;
+        margin: 35px auto 0;
     }
 
     #main #caseM .row2Wp .row2 .right div {
         width: 100%;
-        margin-left: 3px;
+        margin: 0;
     }
 
     #main #about {
@@ -1819,6 +2206,7 @@ footer #backtop {
 
     #main #caseM .row3 {
         margin-top: 30px;
+        padding-bottom: 10px;
     }
 
     #main #contact {
@@ -1831,6 +2219,9 @@ footer #backtop {
 }
 
 @media(max-width:414px) {
+    #main #caseM .row3 {
+        padding-bottom: 0;
+    }
 
     #main #service {
         height: 439px;
@@ -1838,11 +2229,44 @@ footer #backtop {
 
     #main #service::after {
         height: 200px;
+        margin-top: -200px;
+    }
+
+    #main #caseM {
+        margin-top: -21px;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img {
+        height: 200px;
+        width: 90%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 24px;
+    }
+
+    .slick-prev {
+        left: 2%;
+    }
+
+    #main #caseM .row2Wp .row2 img {
+        height: 260px;
     }
 
     #main #caseM .row1 .right div {
         width: 90%;
-        margin-left: 2px;
+    }
+
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right {
+        height: 213px;
+    }
+
+    #main #caseM .row2Wp .row2 .right {
+        height: 269px;
     }
 
     #main #caseM .row1 .left .text,
@@ -1852,11 +2276,11 @@ footer #backtop {
     }
 
     #main #caseM .row2Wp {
-        padding-top: 459px;
+        padding-top: 560px;
     }
 
     #main #caseM .row2Wp .row2 {
-        padding-bottom: 519px;
+        padding-bottom: 610px;
     }
 
     #main .aboutWp {
@@ -1868,13 +2292,18 @@ footer #backtop {
         height: 200px;
     }
 
-    #main #about .text .title,
-    #main p.title,
-    #main #contact p:nth-child(1),
-    #main #caseM .row1 .left .text .bold,
-    #main #caseM .row2Wp .row2 .left .text .bold,
-    #main #caseM .row3 .text .bold {
-        font-size: 1rem;
+    #main #service .row1 .flex div img {
+        height: 55px;
+    }
+
+
+    #main #about .text {
+        padding: 20px;
+    }
+
+    #main #caseM .row3 .wp {
+        padding-bottom: 0px;
+        height: 247px;
     }
 
     #main #about .text p span,
@@ -1884,12 +2313,11 @@ footer #backtop {
     #main #caseM .row1 .left .text p,
     #main #caseM .row1 .left table td,
     #main #caseM .row2Wp .row2 .left table td,
-    #main #caseM .row2Wp .row2 .left .text p {
+    #main #caseM .row2Wp .row2 .left .text p,
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple,
+    #main #caseM .row2Wp .mobile .table .tr p {
         font-size: 0.9rem;
-    }
-
-    #main #service .row1 .flex div img {
-        height: 55px;
     }
 
     .case table th,
@@ -1906,17 +2334,60 @@ footer #backtop {
     }
 }
 
+@media(max-width:400px) {
+    #main .aboutWp::after {
+        margin-top: -225px;
+        height: 180px;
+    }
+}
+
 @media(max-width:375px) {
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 595px;
+    }
+
+    #main #caseM .row2Wp .row2 .right {
+        height: 274px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 546px;
+    }
+
+    #main #service {
+        height: 426px;
+    }
+
+    #main #caseM .row1 .slick-next {
+        right: 2%;
+    }
+
+    #main #caseM .row1 .slick-prev {
+        left: 1%;
+    }
+
+    #main #about .text .title,
+    #main p.title,
+    #main #contact p:nth-child(1),
+    #main #caseM .row1 .left .text .bold,
+    #main #caseM .row2Wp .row2 .left .text .bold,
+    #main #caseM .row3 .text .bold {
+        font-size: 1.1rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    #main #caseM .row1 .left .text .bold,
+    #main #contact p:nth-child(1) {
+        color: #fff;
+    }
+
     header .row1 a h1 {
         width: 229px;
     }
 
     #main #service .row1 {
         width: 100%;
-    }
-
-    #main #about .text p span:nth-child(2) {
-        margin-bottom: 20px;
     }
 
     #main #contact form .flex {
@@ -1937,17 +2408,57 @@ footer #backtop {
     .mobile {
         width: 100%;
     }
+
+    #main #caseM .row2Wp .mobile {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
 }
 
-@media(max-width:360px) {
-    #main .aboutWp::after {
-        margin-top: -210px;
+@media(max-width:365px) {
+
+    #main #about .text p span,
+    #main #contact p:nth-child(2),
+    #main #contact form label,
+    #main #service .row1 .flex div p,
+    #main #caseM .row1 .left .text p,
+    #main #caseM .row1 .left table td,
+    #main #caseM .row2Wp .row2 .left table td,
+    #main #caseM .row2Wp .row2 .left .text p,
+    #main #caseM .row1 .left table .purple,
+    #main #caseM .row2Wp .row2 .left table .purple,
+    #main #caseM .row2Wp .mobile .table .tr p {
+        font-size: 0.85rem;
     }
 }
 
 @media(max-width:350px) {
-    #main .aboutWp::after {
-        margin-top: -220px;
+    #main #caseM .row3 .wp {
+        height: 217px;
+    }
+
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 602px;
+    }
+
+    #main #caseM .row2Wp {
+        padding-top: 553px;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img {
+        height: 188px;
+    }
+
+    #main #caseM .row1 .slick-next {
+        right: 1%;
+    }
+
+    #main #caseM .row1 .slick-prev {
+        left: 0;
+    }
+
+    #main #service::after {
+        margin-top: -165px;
     }
 
     #main #service .row1 .flex {
@@ -1981,14 +2492,35 @@ footer #backtop {
     footer .r ul li {
         font-size: 0.9rem;
     }
+
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right {
+        height: 205px;
+    }
 }
 
 @media(max-width:330px) {
-    #main #about .text {
-        width: 95%;
+    #main #caseM .row2Wp .row2 {
+        padding-bottom: 616px;
     }
 
-    #main .aboutWp::after {
-        margin-top: -200px;
+    #main #caseM .row2Wp {
+        padding-top: 569px;
+    }
+
+    #main #about .text {
+        padding-top: 0;
+    }
+
+    #main #caseM .row1 img,
+    #main #caseM .row3 .wp div img {
+        height: 177px;
+    }
+
+    #main #caseM .row1 .left,
+    #main #caseM .row2Wp .row2 .left,
+    #main #caseM .row1 .right {
+        height: 191px;
     }
 }
